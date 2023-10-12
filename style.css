@@ -1,0 +1,465 @@
+@font-face {
+    font-family: font;
+    src: url(S6uyw4BMUTPHjx4wXg.woff2);
+}
+
+*{
+    margin:0;
+    padding:0;
+    font-family: "font";
+    box-sizing: border-box;
+}
+html,body{
+    width:100%;
+    height: 100%;
+    padding:0 40px;
+}
+.page1{
+    width:100%;
+    height:100%;
+    color:#000;
+}
+/*      NAV BAR   */
+.page1 .nav{
+    width:100%;
+    height:10%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.page1 .nav img{
+    width:180px;
+    height:60px;
+    padding:0 30px;
+    margin-left:-30px;
+}
+.page1 .nav .nav-between{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left:-14rem;
+}
+.page1 .nav .nav-between h3 {
+    margin-right: 30px;
+    font-family: "font";
+    font-weight: 400;
+    font-size: 14px;
+    cursor: pointer;
+    left:10px;
+    position: relative;
+}
+
+.page1 .nav .nav-between h3::before {
+    content: '';
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    height: 3px;
+    border-radius:5px;
+    background-color: #000;
+}
+
+.page1 .nav .nav-between h3:hover::before {
+    width: 100%;
+}
+
+.page1 .nav .nav-last {
+    align-items: center;
+    position: relative;
+    right:40px;
+    left:20px;
+}
+.page1 .nav .nav-last i{
+    margin-right:20px ;
+    font-weight: 900;
+    cursor: pointer;
+}
+/*    Main content    */
+.page1 .main{
+    width:100%;
+    height:60%;
+    position: relative;
+    top:15px;
+    background-image: url("main img computer.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.page1 .main .main-text{
+    width:700px;
+    height:300px;
+    position: absolute;
+    line-height:36px ;
+    top: 60%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    text-align: center;
+}
+.page1 .main .main-text h3,p,.button{
+    position: relative;
+    top:120px;
+}
+.page1 .main .main-text h3{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+.page1 .main .main-text p{
+    font-weight: 300;
+    font-size: 16px;
+    margin-left:16px;
+}
+.page1 .main .main-text .button{
+    width:138px;
+    padding:6px 25px;
+    outline: none;
+    border-radius: 30px;
+    position: relative;
+    left:40%;
+    cursor: pointer;
+    top:130px;
+    color:#fff;
+    background-color: #262626;
+}
+.page1 .main .main-text .button :hover{
+    opacity: 0.7;
+}
+.page1 .lower-div{
+    width:100%;
+    height:50%;
+    display: flex;
+    position: relative;
+    top:30px;
+} 
+.page1 .lower-div .surface{
+   width:25%;
+   height:100%;
+}
+.page1 .lower-div .surface img,.page1 .lower-div .controller img,.page1 .lower-div .edge img{
+    width:100%;
+}
+.page1 .lower-div .surface p,.page1 .lower-div .controller p,.page1 .lower-div .edge p{
+    position: absolute;
+    top:290px;
+}
+.page1 .lower-div .surface h3,.page1 .lower-div .controller h3,.page1 .lower-div .edge h3 {
+    position: relative;
+    top:10px;
+    margin-bottom:10px;
+}
+.page1 .lower-div .surface h4,.page1 .lower-div .controller h4,.page1 .lower-div .edge h4{
+    position: relative;
+    top:10px;
+    font-weight: 200;
+    line-height: 26px;
+    font-size: 15px;
+}
+.page1 .lower-div .surface p,.page1 .lower-div .controller p,.page1 .lower-div .edge p{
+    color:#0067B8;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    transition: transform 0.3s ease ;
+}
+.page1 .lower-div .surface i,.page1 .lower-div .controller i,.page1 .lower-div .edge i{
+    font-size: 22px;
+    position: relative;
+    top:0.21rem;
+    margin-left:-4px;
+}
+.page1 .lower-div .laptop{
+    width:25%;
+    height:100%;
+    background-image: url('laptop.png');
+    background-repeat:no-repeat;
+    position: relative;
+    left:17px;
+}
+.page1 .lower-div .laptop h3{
+    position: relative;
+    top:170px;
+}
+.page1 .lower-div .laptop h4{
+    position: relative;
+    top:180px;
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 30px;
+
+}
+.page1 .lower-div .laptop p{
+    position: relative;
+    top:180px;
+    color:#0067B8;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+}
+.page1 .lower-div .controller{
+    width:25%;
+    position: relative;
+    left:30px;
+    height:100%;
+}
+.page1 .lower-div .edge{
+    width:21%;
+    position: relative;
+    left:45px;
+    height:100%;
+}
+.page1 .lower-div .edge img{
+    height:48%;
+}
+.page1 .main-lowerimg{
+    width:100%;
+    height:50%;
+    background-image: url('xbox.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    position: relative;
+    top:90px;
+}
+.page1 .text{
+    width:500px;
+    height: 300px;
+    padding:10px 35px;
+}
+.page1 .text h4{
+    font-size: 1.4rem;
+    position: relative;
+    top:30px;
+}
+.page1 .text p{
+    line-height: 24px;
+    position: relative;
+    width:400px;
+    font-size:16px;
+    top:40px;
+}
+.page1 .text .button{
+    position: relative;
+    top:50px;
+    width:130px;
+    text-align: center;
+    left:-6px;
+    padding:15px 20px;
+    border-radius: 40px;
+    background-color: #000;
+}
+.page1 .text .button h5{
+    font-size: 0.9rem;
+    font-weight: 900;
+    color: #fff;
+}
+.page1 .niche{
+    width:100%;
+    height:45%;  /* Height has become 165% */
+    position: relative;
+    display: flex;
+    top:110px;   
+}
+.page1 .niche .first,.page1 .niche .second,.page1 .niche .third,.page1 .niche .fourth{
+    width:25%;
+    height:100%;
+    line-height: 30px;
+}
+.page1 .niche .first h3,.page1 .niche .second h3,.page1 .niche .third h3,.page1 .niche .fourth h3{
+font-size: 1.1rem;
+font-weight: 900;
+}
+.page1 .niche .first h4,.page1 .niche .second h4,.page1 .niche .fourth h4{
+    font-weight: 100;
+}
+.page1 .niche .third h4{
+    font-weight: 100;
+    width:250px;
+}
+.page1 .niche .first p,.page1 .niche .fourth p{
+    position: inherit;
+    color:#0067B8;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.page1 .niche .first i,.page1 .niche .second i,.page1 .niche .third i,.page1 .niche .fourth i{
+font-size: 22px;
+position: relative;
+top:0.21rem;
+margin-left:-4px;
+}
+.page1 .niche .second{
+    position: relative;
+    left:3px;
+}
+.page1 .niche .second p,.page1 .niche .third p{
+    position: relative;
+    top:0;
+    color:#0067B8;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.page1 .niche .third{
+    position: relative;
+    left:7px;
+}
+.page1 .niche .fourth{
+    position: relative;
+    left:8px;
+}
+.page1 .niche .fourth p{
+    position: relative;
+    top:0;
+    color:#0067B8;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.page1 .tree{
+    width:100%;
+    height:50%;
+    position: relative;
+    top:160px;
+    background-image:url('carbon.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color:#fff;
+}
+.page1 .tree .tree-text{
+    width:500px;
+    line-height: 30px;
+    position: absolute;
+    top:25%;
+    left:3%;
+}
+.page1 .tree .tree-text h3{
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+}
+.page1 .tree .tree-text h4{
+    font-size:1rem;
+    margin-bottom: 20px;
+    font-weight: 200;
+}
+.page1 .tree .tree-text .button1{
+    width:150px;
+    padding:7px 0px;
+    font-size: 1.5vw;
+    text-align: center;
+    background-color:#fff;
+    color:#333333;
+    border-radius: 2vw;
+    cursor: pointer;
+}
+.page1 .tree .tree-text .button1 i{
+    font-size: 25px;
+    position: relative;
+    top:3px;
+    margin-left:-7px;
+}
+.page1 .tree .tree-text .button1:hover{
+    opacity: 0.6;
+}
+.page1 .follow{
+    width:100%;
+    height:10%;
+    top:170px;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+.page1 .follow h3{
+    color:#000;
+    font-size: 1em;
+    font-weight: 200;
+    margin-left:30px;
+}
+.page1 .follow i{
+    font-size: 2rem;
+    margin-right:10px;
+}
+.page1 .follow i:nth-child(1){
+    margin-left:10px;
+    color:#00f;
+}
+.page1 .follow i:nth-child(2)
+{
+        color:#55ACEE;
+}
+.page1 .follow i:nth-child(3)
+{   
+     color:#00f;
+}
+.page1 .upper{
+    width:100%;
+    display: flex;
+    height:30vw;
+    position: relative;
+    top:180px;
+    background-color: #F2F2F2;
+    line-height: 31px;
+}
+.page1 .upper .upper1,.page1 .upper .upper2,.page1 .upper .upper3,.page1 .upper .upper4,.page1 .upper .upper5,.page1 .upper .upper6{
+    width:16.67%;
+    height:55%;
+}
+.page1 .upper h5{
+    top:30px;
+    position: relative;
+    left:40px;
+}
+.page1 .upper h5:nth-child(1){
+    font-size: 14px;
+    color:#616161;
+}
+.page1 .upper .upper1 h5:nth-child(n+2),.page1 .upper .upper2 h5:nth-child(n+2),.page1 .upper .upper3 h5:nth-child(n+2),.page1 .upper .upper4 h5:nth-child(n+2),.page1 .upper .upper5 h5:nth-child(n+2),.page1 .upper .upper6 h5:nth-child(n+2){
+    opacity: 0.8;
+    font-size: 12px;
+    font-weight: 100;
+    cursor: pointer;
+}
+.page1 .upper .upper2,.page1 .upper .upper3,.page1 .upper .upper4,.page1 .upper .upper5,.page1 .upper .upper5{
+    margin-left:2px;
+}
+.page1 .footer-bottom{
+    display: flex;
+    position: absolute;
+    width:86.7vw;
+    height: 20vh;
+    align-items: center;
+    justify-content: center;
+}
+.page1 .footer-bottom .footer-globe{
+    display: flex;
+    position: absolute;
+    gap:30px;
+    left:290px;
+    justify-content: center;
+    opacity: 0.7;
+    /* border: 2px solid blue; */
+    height:30px;
+    align-items: center;
+    flex-direction: row;
+    top:46px;
+    margin-bottom: -400px;
+}
+.page1 .footer-bottom .footer-globe h6{
+    font-size: 0.87vw;
+}
+.page1 .footer-bottom img{
+   width:30px;
+   height:30px;
+   position: relative;
+   left:-410px;
+}
+.page1 .footer-bottom h5{
+    position: relative;
+    left:-406px;
+    opacity: 0.7;
+}
