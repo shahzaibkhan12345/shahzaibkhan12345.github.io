@@ -1,0 +1,33 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+:root{
+    --font-size-nav:1.6rem;
+    --font-size-start:1.6rem;
+    --font-size-end:1.6rem;
+}
+html,body{
+    width:100%;
+    height: 100%;
+    background-color: red;
+}
+.page1{
+    width:100%;
+    height:100vh;
+    border-bottom: 8px solid #222;
+}
+.nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+    height:10vh;
+    background-color: blue;
+}
+.nav .mid{
+    display:flex;
+    gap:40px;
+    font-size: var(--font-size-nav);
+}
